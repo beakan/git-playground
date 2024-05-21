@@ -3,6 +3,7 @@ import request from 'supertest';
 import { createServer } from './app';
 
 // This is a test to make sure the server is running
+// This is temporary and needs extensive testing
 describe('Testing Server', () => {
   it("GET: / should return 'Hello World!'", async () => {
     const app = await createServer();
