@@ -10,6 +10,9 @@ export class Product {
 
   @Column('text')
   description: string;
+  
+  @Column('text', { nullable: true })
+  imageUrl?: string;
 
   @Column('text', { nullable: true })
   image?: string;
