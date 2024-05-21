@@ -11,6 +11,9 @@ export class Product {
   @Column('text')
   description: string;
 
+  @Column('text', { nullable: true })
+  image?: string;
+
   @Column('decimal', { precision: 10, scale: 2 })
   price: number;
 }
