@@ -4,7 +4,7 @@ import { createServer } from './app';
 const port = process.env.PORT || 8080;
 
 createServer().then((app) => {
-  // Listen on provided port when app is ready
+  // Listen on provided port when app is ready to be launched
   app.listen(port, () => {
     console.log(`⚡️[server]: API is listening at http://localhost:${port}`);
   });
